@@ -1,29 +1,27 @@
-from flask import Flask
-from redis import Redis, RedisError
-import os
-import socket
-import datetime
+from flask import Flask, render_template, redirect, url_for, request
 
-# Connect to Redis
-redis = Redis(host="redis", db=0, socket_connect_timeout=2, socket_timeout=2)
+from student import Student
+
+students = []
 
 app = Flask(__name__)
 
-@app.route("/")
-def hello():
-    justnow = "test"
-    try:
-        visits = redis.incr("counter")
-    except RedisError:
-        visits = "<i>cannot connect to Redis, counter disabled</i>"
 
-    html = "<h3>Hello {name}!!</h3>" \
-           "<b>Hostname:</b> {hostname}<br/>" \
-           "<b>Visits:</b> {visits}<br/>" \
-           "<b>Datetime:</b>" + str(datetime.datetime.now())
+@app.route("/", methods=["GET", "POST"])
+def students_page():
+    if request.method == "POST":
+        new_student_id = request.form.get("student-id", "")
+        new_student_first_name = request.form.get("first-name", "")
+        new_student_last_name = request.form.get("last-name", "")
 
+        new_student = Student(first_name=new_student_first_name, last_name=new_student_last_name,
+                              student_id=new_student_id)
+        students.append(new_student)
 
-    return html.format(name=os.getenv("NAME", "world"), hostname=socket.gethostname(), visits=visits)
+        return redirect(url_for("students_page"))
+    else:
+        return render_template("index.html", students=students)
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=80)
