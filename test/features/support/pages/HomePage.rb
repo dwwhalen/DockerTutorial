@@ -10,10 +10,6 @@ class HomePage
 
   button(:submit_button, value: 'Submit')
 
-  def page_title
-    @browser.title
-  end
-
   def table_row_count
     the_table_element.rows
   end

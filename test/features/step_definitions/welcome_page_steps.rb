@@ -5,7 +5,7 @@ Given(/^the user navigates to the Home page$/) do
 end
 
 Then(/^the user sees the title "(.*?)"$/) do |message|
-  expect(on(HomePage).page_title).to eq message
+  expect(on(HomePage).title).to eq message
 end
 
 And(/^the user sets the student id to (\d+)$/) do |student_id|
