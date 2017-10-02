@@ -1,0 +1,8 @@
+group :development, :test do
+  gem 'cucumber'
+  gem 'database_cleaner'
+  gem 'watir'
+  gem 'rspec'
+
+# other gems can go here
+end
