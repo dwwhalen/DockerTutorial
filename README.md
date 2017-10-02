@@ -1,1 +1,1 @@
-The code creted when waling through https://docs.docker.com/get-started/
+The code created when walking through https://docs.docker.com/get-started/
