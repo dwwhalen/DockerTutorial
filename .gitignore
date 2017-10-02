@@ -101,4 +101,4 @@ ENV/
 .mypy_cache/
 .idea/preferred-vcs.xml
 
-/.idea/
+.idea/
