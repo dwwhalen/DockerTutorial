@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b49cfd3-14e8-4950-b644-e61ee2f4ab97" name="Default" comment="done with part 3">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/.idea/test.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/Gemfile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/Gemfile.lock" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/features/step_definitions/welcome_page_steps.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/features/support/env.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/features/support/hooks.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/features/welcome_page.feature" />
+    <list default="true" id="4b49cfd3-14e8-4950-b644-e61ee2f4ab97" name="Default" comment="added some ruby tests">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/features/support/pages/HomePage.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app.py" afterPath="$PROJECT_DIR$/app.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/.idea/test.iml" afterPath="$PROJECT_DIR$/test/.idea/test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/.idea/workspace.xml" afterPath="$PROJECT_DIR$/test/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Gemfile" afterPath="$PROJECT_DIR$/test/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/Gemfile.lock" afterPath="$PROJECT_DIR$/test/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/features/step_definitions/welcome_page_steps.rb" afterPath="$PROJECT_DIR$/test/features/step_definitions/welcome_page_steps.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/features/support/env.rb" afterPath="$PROJECT_DIR$/test/features/support/env.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/features/support/hooks.rb" afterPath="$PROJECT_DIR$/test/features/support/hooks.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/features/welcome_page.feature" afterPath="$PROJECT_DIR$/test/features/welcome_page.feature" />
     </list>
     <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,18 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -93,6 +79,15 @@
             <path>
               <item name="DockerTutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="DockerTutorial" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DockerTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="DockerTutorial" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.5.2 (/usr/bin/python3.5) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
@@ -207,14 +202,20 @@
       <option name="project" value="LOCAL" />
       <updated>1506950235739</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added some ruby tests">
+      <created>1506956598503</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1506956598503</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="222" y="89" width="1857" height="987" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24959569" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -257,7 +258,8 @@
     <MESSAGE value="added .gitignore" />
     <MESSAGE value="updated to use the Student app instead of Hello World" />
     <MESSAGE value="done with part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="done with part 3" />
+    <MESSAGE value="added some ruby tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some ruby tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -425,8 +427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="54">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
