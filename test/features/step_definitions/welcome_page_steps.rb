@@ -1,5 +1,3 @@
-require 'watir'
-
 Given(/^the user navigates to the Home page$/) do
   visit HomePage
 end

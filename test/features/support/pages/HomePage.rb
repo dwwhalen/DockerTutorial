@@ -6,7 +6,7 @@ class HomePage
   text_field(:student_id, id: 'student-id')
   text_field(:student_first_name, id: 'first-name')
   text_field(:student_last_name, id: 'last-name')
-  table(:the_table, class: 'table table-striped')
+  table(:the_table, class: ['table', 'table-striped'])
 
   button(:submit_button, value: 'Submit')
 

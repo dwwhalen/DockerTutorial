@@ -6,6 +6,5 @@ group :development, :test do
   gem 'watir'
   gem 'rspec'
   gem 'page-object'
-
-# other gems can go here
+  gem 'rake'
 end
