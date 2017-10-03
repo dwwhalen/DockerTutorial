@@ -7,4 +7,7 @@ group :development, :test do
   gem 'rspec'
   gem 'page-object'
   gem 'rake'
+  gem 'xvfb'
+  gem 'headless'
+  gem 'chromedriver-helper'
 end

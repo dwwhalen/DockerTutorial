@@ -1,4 +1,14 @@
-browser = Watir::Browser.new :firefox
+require 'watir'
+require 'headless'
+
+# if ENV['HEADLESS']
+  headless = Headless.new
+  headless.start
+# end
+browser = Watir::Browser.start 'www.google.com'
+# puts b.title
+# b.close
+# headless.destroy
 
 Before do
   @browser = browser
@@ -9,5 +19,10 @@ After do
 end
 
 at_exit do
-  browser.close
+  # if ENV['HEADLESS']
+    headless.destroy
+  # else
+  #   browser.close
+  # end
+
 end
