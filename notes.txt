@@ -29,4 +29,4 @@ MY STUFF:
 docker build -t mytests .
 docker run mytests:latest
 
-rake cucumber HEADLESS=true
+rake features HEADLESS=true
