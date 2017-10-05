@@ -3,7 +3,9 @@
 # @headless = Headless.new
 # @headless.start
 
+
 browser = Watir::Browser.new :firefox
+
 
 Before do
   @browser = browser

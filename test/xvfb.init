@@ -1,3 +1,21 @@
+#!/bin/bash
+#
+# /etc/rc.d/init.d/xvfbd
+#
+# chkconfig: 345 95 28
+# description: Starts/Stops X Virtual Framebuffer server
+# processname: Xvfb
+#
+
+### BEGIN INIT INFO
+# Provides:          5_second_cron
+# Required-Start:    $remote_fs $syslog
+# Required-Stop:     $remote_fs $syslog
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: PHP Loop
+# Description:       Initiate a given PHP file every 5 seconds
+### END INIT INFO
 
 [ "${NETWORKING}" = "no" ] && exit 0
 
@@ -8,7 +26,8 @@ PROG_OUTPUT="/tmp/Xvfb.out"
 case "$1" in
     start)
         echo -n "Starting : X Virtual Frame Buffer "
-        /usr/bin/Xvfb :10 -ac & disown
+        $PROG $PROG_OPTIONS>>$PROG_OUTPUT 2>&1 &
+        disown -ar
    		;;
     stop)
         echo -n "Shutting down : X Virtual Frame Buffer"

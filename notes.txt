@@ -27,6 +27,6 @@ docker stack rm <appname>                             # Tear down an application
 
 MY STUFF:
 docker build -t mytests .
-docker run mytests:latest
+docker run --rm mytests:latest
 
-rake features HEADLESS=true
+rake features_headless
