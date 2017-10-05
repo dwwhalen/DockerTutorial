@@ -5,6 +5,7 @@ docker run -d -p 4000:80 friendlyname         # Same thing, but in detached mode
 docker container ls                                # List all running containers
 docker container ls -a             # List all containers, even those not running
 docker container stop <hash>           # Gracefully stop the specified container
+docker container stop $(docker container ls)               # Stop all containers
 docker container kill <hash>         # Force shutdown of the specified container
 docker container rm <hash>        # Remove specified container from this machine
 docker container rm $(docker container ls -a -q)         # Remove all containers
@@ -26,7 +27,26 @@ docker container ls -q                                      # List container IDs
 docker stack rm <appname>                             # Tear down an application
 
 MY STUFF:
+
+START the app:
+docker build -t pythonapp .
+docker stop my_python_app
+docker rm my_python_app
+docker run --name=my_python_app -itd -p 5001:5000 pythonapp
+
+run the tests:
+cd test
 docker build -t mytests .
-docker run --rm mytests:latest
+docker run --name=my_tests_app --rm mytests
 
 rake features_headless
+
+CREATE
+sudo docker run -itd --name=client_setup ubuntu /bin/bash
+sudo docker attach client_setup
+apt-get -qq update
+apt-get install curl
+- detach from the client container using CTRL+p then CTRL+q
+sudo docker stop client_setup
+sudo docker commit client_setup client_img
+- we now have an image called client_img to use
